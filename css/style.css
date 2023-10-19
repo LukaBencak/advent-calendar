@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  body{
+  background: #01b388
+}
+
+  .container {
+  margin:  auto;
+  background: #01b388;
+  border-radius: 3px;
+  border: 1px solid #01b388;
+  text-align: center
+}
+
+  .container h2 {
+  color: #fff;
+  font-size: 80px;
+  font-family: tahoma;
+  padding: 100px 0 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+    column-gap: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.grid-container div{
+  color:#fff;
+  font-size: 140px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.grid-container .title{
+  font-weight: 100;
+  font-size: 70px;
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container{
+    grid-template-columns: auto auto !important;
+  }
+
+  .grid-container .title{
+    color: red;
+  }
+}
