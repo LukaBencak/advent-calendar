@@ -7,20 +7,18 @@
 }
 
   body{
-  background: #01b388
+  background-image: url('../img/background.jpg');
 }
 
   .container {
   margin:  auto;
-  background: #01b388;
-  border-radius: 3px;
-  border: 1px solid #01b388;
-  text-align: center
+  text-align: center;
+  padding: 50px;
 }
 
   .container h2 {
   color: #fff;
-  font-size: 80px;
+  font-size: 100px;
   font-family: tahoma;
   padding: 100px 0 20px;
   font-weight: normal;
@@ -39,7 +37,7 @@
 
 .grid-container div{
   color:#fff;
-  font-size: 140px;
+  font-size: 200px;
   font-family: 'Oswald', sans-serif;
 }
 
@@ -48,12 +46,8 @@
   font-size: 70px;
 }
 
-@media screen and (max-width: 600px) {
-  .grid-container{
-    grid-template-columns: auto auto !important;
-  }
-
-  .grid-container .title{
-    color: red;
+@media screen and (max-width: 480px) {
+  .container h2 {
+    padding: 300px 0 0;
   }
 }
