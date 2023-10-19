@@ -63,3 +63,10 @@ h2{
   font-weight: normal;
   text-transform: uppercase;
 }
+
+
+@media screen and (max-width: 600px) {
+  .container h2 {
+    padding: 350px 0 20px;
+  }
+}
